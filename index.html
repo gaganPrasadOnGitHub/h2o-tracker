@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>H2O Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title my-16">H<sub>2</sub>O Tracker</h1>
+    </header>
+
+    <div class="tracker-container">
+      <div class="w-300">
+        <h3 class="mb-16" id="water-level-value">0 Liters</h3>
+        <div class="main-glass">
+          <div id="main-glass-water-level"></div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-16">Drank <span id="filled-glasses-number">0</span>/12 of glass of water</h4>
+        <div class="small-glasses-container">
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+          <div class="small-glass"></div>
+        </div>
+        <h3 class="my-16" id="water-level-percentage">0.00% of daily goal achieved</h3>
+      </div>
+    </div>
+    <button class="reset" id="reset-water-tracker-button">Reset</button>
+
+    <footer>
+      <small
+        >Code by
+        <a href="https://cssbattle.dev/player/gagan" rel="noopener noreferrer" target="_blank"
+          >GP</a
+        ></small
+      >
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

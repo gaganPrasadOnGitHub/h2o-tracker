@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --text-color: #003d52;
+  --bg-color: #f5f5f5;
+  --water-color: #85e6ff;
+  --glass-color: #b6f0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.my-16 {
+  margin: 16px 0;
+}
+
+.tracker-container {
+  display: flex;
+  padding: 0 16px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-glass {
+  width: 150px;
+  height: 300px;
+  margin: 16px auto;
+  position: relative;
+  border-radius: 0 0 16px 16px;
+  border: 5px solid var(--glass-color);
+  border-top: none;
+}
+
+#main-glass-water-level {
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background: var(--water-color);
+  transition: all ease-in-out 300ms;
+}
+
+.small-glasses-container {
+  display: grid;
+  grid-gap: 16px;
+  margin: 16px 0;
+  justify-content: center;
+  grid-template-columns: repeat(6, 50px);
+}
+
+.small-glass {
+  width: 50px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  transition: all ease-in-out 300ms;
+  border: 3px solid var(--glass-color);
+  border-top: none;
+}
+
+.small-glass.filled {
+  background: var(--water-color);
+}
+
+.reset {
+  display: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 16px auto;
+  padding: 12px 32px;
+  border-radius: 8px;
+  color: var(--text-color);
+  background: var(--water-color);
+  transition: all ease-in-out 300ms;
+  border: 2px solid var(--water-color);
+}
+
+.reset:hover {
+  translate: 0 2px;
+  background: var(--glass-color);
+}
+
+.reset.visible {
+  display: block;
+}
+
+footer {
+  font-weight: 700;
+  margin: auto auto 16px;
+}
+
+footer a {
+  color: var(--text-color);
+}
